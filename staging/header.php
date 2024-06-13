@@ -44,13 +44,14 @@ $url = 'https://www.agro.agr.br';
 
 $url_api = $url.'/api/site/'.str_replace('ç', 'c', $site_name) . "?" . http_build_query([ "ip" => $_SERVER["REMOTE_ADDR"], "ua" => $_SERVER['HTTP_USER_AGENT'] ]);
 
-echo $url_api;
 
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($curl, CURLOPT_URL, $url_api);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($curl); 
+echo $url_api;
+echo $response;
 $site = json_decode($response, true);
 curl_close($curl);
 $barra = $_SERVER[REQUEST_URI];
