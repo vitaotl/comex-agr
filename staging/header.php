@@ -21,7 +21,7 @@ function redirectHttps()
 $site_name = str_replace(['www.staging.', '.agr.br'], '', $_SERVER['SERVER_NAME']);
 $url_base = 'https://'.$_SERVER['SERVER_NAME'];
 redirectHttps();
-
+var_dump($_SERVER['SERVER_NAME']); die();
 //$site_name = 'abacate';
 //$url_base = 'http://localhost/agro';
 
@@ -51,7 +51,7 @@ curl_setopt($curl, CURLOPT_URL, $url_api);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($curl); 
 // echo $url_api;
-print_r($response);
+// print_r($response);
 $site = json_decode($response, true);
 curl_close($curl);
 $barra = $_SERVER[REQUEST_URI];
