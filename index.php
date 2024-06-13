@@ -349,7 +349,7 @@ $offers = json_decode(file_get_contents($url_ofertas));
 						<div class="row">
 							<div class="col-6">
 								<h5 class="mb-0 text-primary text-center"><strong>Seja Fornecedor.</strong></h5>
-								<a href="https://www.<?= $site->settings['buscamos_fornecedores_url'] ?>.agr.br" class="btn btn-primary btn-sm btn-block mt-2 mb-2"><?= $site->settings['buscamos_fornecedores_title'] ?></a>
+								<a href="https://www.<?= $site->settings['buscamos_fornecedores_url'] . $foundPattern ?>" class="btn btn-primary btn-sm btn-block mt-2 mb-2"><?= $site->settings['buscamos_fornecedores_title'] ?></a>
 								<a href="https://www.fornecedores.agr.br"><img src="<?= $url ?>/assets/img/Fornecedor-Agro.jpg" alt="Agro Agr" class="img-fluid mb-3"></a>
 
 								<p class="text-primary"><small>Fa&ccedil;a o cadastro e disponibilize<br>
@@ -369,7 +369,7 @@ $offers = json_decode(file_get_contents($url_ofertas));
 							</div>
 							<div class="col-6">
 								<h5 class="mb-0 text-center text-info"><strong>Produtos da Safra.</strong></h5>
-								<a href="http://<?= $site->settings['safra_safrinha_url'] ?>.agr.br" class="btn btn-info btn-sm btn-block mt-2 mb-2"><?= $site->settings['safra_safrinha_title'] ?></a>
+								<a href="http://<?= $site->settings['safra_safrinha_url'] . $foundPattern ?>" class="btn btn-info btn-sm btn-block mt-2 mb-2"><?= $site->settings['safra_safrinha_title'] ?></a>
 								<a href="http://agro.agr.br/safra"><img src="<?= $url ?>/assets/img/Comprador-Agro.jpg" alt="Agro Agr" class="img-fluid mb-3"></a>
 
 								<p class="text-right text-primary"><small>Aproveite as ofertas de produtos<br>
