@@ -21,7 +21,30 @@ function redirectHttps()
 $site_name = str_replace(['www.staging.', '.agr.br'], '', $_SERVER['SERVER_NAME']);
 $url_base = 'https://'.$_SERVER['SERVER_NAME'];
 redirectHttps();
-var_dump($_SERVER['SERVER_NAME']); die();
+
+// Obter a URL atual do navegador
+$currentUrl = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+
+// Definir os padrões que você quer procurar
+$patterns = [".agr.br", "com.br", ".com", ".cn", ".com.cn"];
+
+// Variável para armazenar o padrão encontrado
+$foundPattern = null;
+
+// Procurar os padrões na URL
+foreach ($patterns as $pattern) {
+    if (strpos($currentUrl, $pattern) !== false) {
+        $foundPattern = $pattern;
+        break;
+    }
+}
+
+// Exibir o padrão encontrado
+echo $foundPattern;
+die();
+
+
+
 //$site_name = 'abacate';
 //$url_base = 'http://localhost/agro';
 
