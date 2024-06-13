@@ -171,7 +171,7 @@ $offers = json_decode(file_get_contents($url_ofertas));
 	<div class="row align-items-center mb-3">
 		<div class="col-sm-5 order-2 order-sm-1 pt-3">
 			<h1 class="text-primary font-bold"><?= $site->title ?></h1>
-			<p class="text-primary" style="font-size: 14px;">Voc&ecirc; vai encontrar fornecedores de <B>
+			<p class="text-primary" style="font-size: 14px;">Voc stg &ecirc; vai encontrar fornecedores de <B>
 					<?= $site->prefixo_action ?> <?= $site->title ?>
 				</B> no Brasil e China. Compradores de <B>
 					<?= $site->prefixo_action ?> <?= $site->title ?>
