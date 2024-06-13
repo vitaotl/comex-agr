@@ -50,7 +50,7 @@ curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($curl, CURLOPT_URL, $url_api);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($curl); 
-echo $url_api;
+// echo $url_api;
 print_r($response);
 $site = json_decode($response, true);
 curl_close($curl);
