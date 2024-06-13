@@ -19,7 +19,7 @@ function redirectHttps()
 
 
 //Produção
-$site_name = str_replace(['www.', '.agr.br'], '', $_SERVER['SERVER_NAME']);
+$site_name = str_replace(['www.staging.', '.agr.br'], '', $_SERVER['SERVER_NAME']);
 $url_base = 'https://'.$_SERVER['SERVER_NAME'];
 redirectHttps();
 
