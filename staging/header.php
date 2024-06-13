@@ -69,7 +69,7 @@ if($barra == "/especificacoes.php")
 }
 
 $recaptcha_key = '6LegvqYZAAAAAEMFxWBnJpWeNQlHI6OelJLw6QZ7';
-var_dump($site); die();
+print_r($site); die();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
