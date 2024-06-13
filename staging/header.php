@@ -51,7 +51,7 @@ curl_setopt($curl, CURLOPT_URL, $url_api);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($curl); 
 echo $url_api;
-echo $response;
+print_r($response);
 $site = json_decode($response, true);
 curl_close($curl);
 $barra = $_SERVER[REQUEST_URI];
@@ -70,7 +70,7 @@ if($barra == "/especificacoes.php")
 }
 
 $recaptcha_key = '6LegvqYZAAAAAEMFxWBnJpWeNQlHI6OelJLw6QZ7';
-print_r($site); die();
+// print_r($site); die();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
