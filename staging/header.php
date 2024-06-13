@@ -44,7 +44,7 @@ $url = 'https://www.agro.agr.br';
 
 $url_api = $url.'/api/site/'.str_replace('ç', 'c', $site_name) . "?" . http_build_query([ "ip" => $_SERVER["REMOTE_ADDR"], "ua" => $_SERVER['HTTP_USER_AGENT'] ]);
 
-//echo $url_api;
+echo $url_api;
 
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
