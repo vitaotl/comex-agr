@@ -17,7 +17,7 @@ function redirectHttps()
 	}
 }
 
-$patterns = [".agr.br", "com.br", ".com", ".cn", ".com.cn"];
+$patterns = [".agr.br", ".com.br", ".com", ".cn", ".com.cn"];
 
 function getPatternFromUrl($patterns) {
 	// Obter a URL atual do navegador
@@ -116,17 +116,17 @@ $recaptcha_key = '6LegvqYZAAAAAEMFxWBnJpWeNQlHI6OelJLw6QZ7';
 	<link rel="shortcut icon" href="<?= $url?>/assets/img/ico.png" type="image/x-icon">
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="canonical" href="https://www.<?= $site->url . $foundPattern?>"/>	
+	<link rel="canonical" href="https://www.<?= $site->url . $foundPattern ?>"/>	
 
 	<meta property="og:locale" content="pt_BR"/>
 	<meta property="og:locale:alternate" content="pt-br"/>
 	<meta property="og:title" content="Fornecedor de <?= $site->prefixo_action ?> <?= $site->title ?>"/>
 	<meta property="og:type" content="Website"/>
-	<meta property="og:url" content="https://www.<?= $site->url . $foundPattern?>"/>
+	<meta property="og:url" content="https://www.<?= $site->url . $foundPattern ?>"/>
 	<meta property="og:site_name" content="<?= $site->prefixo_action ?> <?= $site->title ?> - Cotação de Produtos"/>
-	<meta property="og:description" content="A <?= $site->url . $foundPattern?> é um aplicativo de informações do setor de <?= $site->prefixo_action ?> <?= $site->title ?>."/>
+	<meta property="og:description" content="O site <?= $site->url . $foundPattern ?> é uma plataforma de compra e venda de <?= $site->prefixo_action ?> <?= $site->title ?>."/>
 
-  <meta property="og:image" content="https://www.agro.agr.br/assets/img/logo-agro.png" />
+  <meta property="og:image" content="https://www.agro.agr.br/assets/img/logo-agro-og-image.png" />
 	<meta property="og:image:type" content="image/png">
 	<meta property="og:image:width" content="600">
 	<meta property="og:image:height" content="315">
@@ -146,9 +146,13 @@ $recaptcha_key = '6LegvqYZAAAAAEMFxWBnJpWeNQlHI6OelJLw6QZ7';
 	<META NAME="revisit=2 days">
 	<META NAME="ROBOTS" CONTENT="follow,index">
 	<META HTTP-EQUIV="Content-Language" CONTENT="pt-br">
+		
 	<META NAME="Description" CONTENT="Plataforma de compra e venda de <?= $site->prefixo_action ?> <?= $site->title ?>. Solicite sua cotação de <?= $site->prefixo_action ?> <?= $site->title ?>.">
+		
 	<META NAME="Keywords" CONTENT="<?= $site->prefixo_action ?> <?= $site->title ?>, APP de <?= $site->prefixo_action ?> <?= $site->title ?>, Aplicativo de <?= $site->prefixo_action ?> <?= $site->title ?>, comércio de <?= $site->prefixo_action ?> <?= $site->title ?>, Request <?= $site->prefixo_action ?> <?= $site->title ?> Quotation - RQF, comprar <?= $site->prefixo_action ?> <?= $site->title ?>, compras de <?= $site->prefixo_action ?> <?= $site->title ?>, fornecedor de <?= $site->prefixo_action ?> <?= $site->title ?>, fornecedores de <?= $site->prefixo_action ?> <?= $site->title ?>, produtor de <?= $site->prefixo_action ?> <?= $site->title ?>, produtores de <?= $site->prefixo_action ?> <?= $site->title ?>, vendedor de <?= $site->prefixo_action ?> <?= $site->title ?>, cotação de <?= $site->prefixo_action ?> <?= $site->title ?>, representante de <?= $site->prefixo_action ?> <?= $site->title ?>, representante de fazenda de <?= $site->prefixo_action ?> <?= $site->title ?>, oferta de <?= $site->prefixo_action ?> <?= $site->title ?>, ofertas de <?= $site->prefixo_action ?> <?= $site->title ?>, comparação de Preço de <?= $site->prefixo_action ?> <?= $site->title ?>, distribuidores de <?= $site->prefixo_action ?> <?= $site->title ?>, distribuidor de <?= $site->prefixo_action ?> <?= $site->title ?>, Whatsapp de <?= $site->prefixo_action ?> <?= $site->title ?>, Atendimento ao vivo de <?= $site->prefixo_action ?> <?= $site->title ?>, Chat de Atendimento <?= $site->prefixo_action ?> <?= $site->title ?>, chatbot de <?= $site->prefixo_action ?> <?= $site->title ?>, vendas de <?= $site->prefixo_action ?> <?= $site->title ?>, <?= $site->prefixo_action ?> <?= $site->title ?> na roça, encontrar  <?= $site->prefixo_action ?> <?= $site->title ?>, variedade de <?= $site->prefixo_action ?> <?= $site->title ?>, carga fechada de <?= $site->prefixo_action ?> <?= $site->title ?>, <?= $site->prefixo_action ?> <?= $site->title ?> no Brasil, <?= $site->prefixo_action ?> <?= $site->title ?> direto do produtor, revendedor de <?= $site->prefixo_action ?> <?= $site->title ?>, Cooperativa de <?= $site->prefixo_action ?> <?= $site->title ?>, comparativo de Preço de <?= $site->prefixo_action ?> <?= $site->title ?>, Tarefa de compra de <?= $site->prefixo_action ?> <?= $site->title ?>, <?= $site->prefixo_action ?> <?= $site->title ?> em São Paulo, <?= $site->prefixo_action ?> <?= $site->title ?> no Acre - AC, <?= $site->prefixo_action ?> <?= $site->title ?> em Alagoas - AL, <?= $site->prefixo_action ?> <?= $site->title ?> no Amapá- AP,<?= $site->prefixo_action ?> <?= $site->title ?> em Amazonas - AM, <?= $site->prefixo_action ?> <?= $site->title ?> na Bahia - BA, <?= $site->prefixo_action ?> <?= $site->title ?> no Ceará- CE, <?= $site->prefixo_action ?> <?= $site->title ?> no Distrito Federal - DF, <?= $site->prefixo_action ?> <?= $site->title ?> no Espírito Santo - ES, <?= $site->prefixo_action ?> <?= $site->title ?> em Goiás - GO, <?= $site->prefixo_action ?> <?= $site->title ?> no Maranhão - MA, <?= $site->prefixo_action ?> <?= $site->title ?> em Mato Grosso - MT, <?= $site->prefixo_action ?> <?= $site->title ?> em Mato Grosso do Sul - MS, <?= $site->prefixo_action ?> <?= $site->title ?> em Minas Gerais - MG, <?= $site->prefixo_action ?> <?= $site->title ?> no Par - PA, <?= $site->prefixo_action ?> <?= $site->title ?> na Paraíba - PB, <?= $site->prefixo_action ?> <?= $site->title ?> no Paran - PR, <?= $site->prefixo_action ?> <?= $site->title ?> em Pernambuco - PE, <?= $site->prefixo_action ?> <?= $site->title ?> no Piau - PI, <?= $site->prefixo_action ?> <?= $site->title ?> no Rio de Janeiro - RJ, <?= $site->prefixo_action ?> <?= $site->title ?> no Rio Grande do Norte - RN, <?= $site->prefixo_action ?> <?= $site->title ?> no Rio Grande do Sul - RS, <?= $site->prefixo_action ?> <?= $site->title ?> em Rondônia - RO, <?= $site->prefixo_action ?> <?= $site->title ?> em Roraima - RR, <?= $site->prefixo_action ?> <?= $site->title ?> em Santa Catarina - SC, <?= $site->prefixo_action ?> <?= $site->title ?> em São Paulo - SP, <?= $site->prefixo_action ?> <?= $site->title ?> em Sergipe - SE, <?= $site->prefixo_action ?> <?= $site->title ?> em Tocantins - TO, supply chain de <?= $site->prefixo_action ?> <?= $site->title ?>, suprimentos de <?= $site->prefixo_action ?> <?= $site->title ?>, empresas do agronegócio. ">
-	<META NAME="Author" CONTENT="https://www.<?= $site->url . $foundPattern ?>/">
+
+		
+		<META NAME="Author" CONTENT="https://www.<?= $site->url . $foundPattern ?>/">
 	<META HTTP-EQUIV="Reply-to" CONTENT="agro@agro.agr.br">
 </head>
 <body>
